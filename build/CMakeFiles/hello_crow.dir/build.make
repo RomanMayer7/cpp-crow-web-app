@@ -57,41 +57,43 @@ include CMakeFiles/hello_crow.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hello_crow.dir/flags.make
 
-CMakeFiles/hello_crow.dir/main.cpp.o: CMakeFiles/hello_crow.dir/flags.make
-CMakeFiles/hello_crow.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/src/cppweb/hello_crow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_crow.dir/main.cpp.o"
-	/usr/local/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_crow.dir/main.cpp.o -c /usr/src/cppweb/hello_crow/main.cpp
+CMakeFiles/hello_crow.dir/main_new.cpp.o: CMakeFiles/hello_crow.dir/flags.make
+CMakeFiles/hello_crow.dir/main_new.cpp.o: ../main_new.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/usr/src/cppweb/hello_crow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_crow.dir/main_new.cpp.o"
+	/usr/local/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hello_crow.dir/main_new.cpp.o -c /usr/src/cppweb/hello_crow/main_new.cpp
 
-CMakeFiles/hello_crow.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_crow.dir/main.cpp.i"
-	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/cppweb/hello_crow/main.cpp > CMakeFiles/hello_crow.dir/main.cpp.i
+CMakeFiles/hello_crow.dir/main_new.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello_crow.dir/main_new.cpp.i"
+	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/cppweb/hello_crow/main_new.cpp > CMakeFiles/hello_crow.dir/main_new.cpp.i
 
-CMakeFiles/hello_crow.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_crow.dir/main.cpp.s"
-	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/cppweb/hello_crow/main.cpp -o CMakeFiles/hello_crow.dir/main.cpp.s
+CMakeFiles/hello_crow.dir/main_new.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello_crow.dir/main_new.cpp.s"
+	/usr/local/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/cppweb/hello_crow/main_new.cpp -o CMakeFiles/hello_crow.dir/main_new.cpp.s
 
-CMakeFiles/hello_crow.dir/main.cpp.o.requires:
+CMakeFiles/hello_crow.dir/main_new.cpp.o.requires:
 
-.PHONY : CMakeFiles/hello_crow.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/hello_crow.dir/main_new.cpp.o.requires
 
-CMakeFiles/hello_crow.dir/main.cpp.o.provides: CMakeFiles/hello_crow.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/hello_crow.dir/main.cpp.o.provides
+CMakeFiles/hello_crow.dir/main_new.cpp.o.provides: CMakeFiles/hello_crow.dir/main_new.cpp.o.requires
+	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main_new.cpp.o.provides.build
+.PHONY : CMakeFiles/hello_crow.dir/main_new.cpp.o.provides
 
-CMakeFiles/hello_crow.dir/main.cpp.o.provides.build: CMakeFiles/hello_crow.dir/main.cpp.o
+CMakeFiles/hello_crow.dir/main_new.cpp.o.provides.build: CMakeFiles/hello_crow.dir/main_new.cpp.o
 
 
 # Object files for target hello_crow
 hello_crow_OBJECTS = \
-"CMakeFiles/hello_crow.dir/main.cpp.o"
+"CMakeFiles/hello_crow.dir/main_new.cpp.o"
 
 # External object files for target hello_crow
 hello_crow_EXTERNAL_OBJECTS =
 
-hello_crow: CMakeFiles/hello_crow.dir/main.cpp.o
+hello_crow: CMakeFiles/hello_crow.dir/main_new.cpp.o
 hello_crow: CMakeFiles/hello_crow.dir/build.make
 hello_crow: /usr/lib/x86_64-linux-gnu/libboost_system.so
 hello_crow: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+hello_crow: /usr/local/lib/libmongocxx.so
+hello_crow: /usr/local/lib/libbsoncxx.so
 hello_crow: CMakeFiles/hello_crow.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/usr/src/cppweb/hello_crow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello_crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_crow.dir/link.txt --verbose=$(VERBOSE)
@@ -101,7 +103,7 @@ CMakeFiles/hello_crow.dir/build: hello_crow
 
 .PHONY : CMakeFiles/hello_crow.dir/build
 
-CMakeFiles/hello_crow.dir/requires: CMakeFiles/hello_crow.dir/main.cpp.o.requires
+CMakeFiles/hello_crow.dir/requires: CMakeFiles/hello_crow.dir/main_new.cpp.o.requires
 
 .PHONY : CMakeFiles/hello_crow.dir/requires
 

@@ -123,32 +123,32 @@ hello_crow/fast:
 	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/build
 .PHONY : hello_crow/fast
 
-main.o: main.cpp.o
+main_new.o: main_new.cpp.o
 
-.PHONY : main.o
+.PHONY : main_new.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main.cpp.o
-.PHONY : main.cpp.o
+main_new.cpp.o:
+	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main_new.cpp.o
+.PHONY : main_new.cpp.o
 
-main.i: main.cpp.i
+main_new.i: main_new.cpp.i
 
-.PHONY : main.i
+.PHONY : main_new.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main.cpp.i
-.PHONY : main.cpp.i
+main_new.cpp.i:
+	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main_new.cpp.i
+.PHONY : main_new.cpp.i
 
-main.s: main.cpp.s
+main_new.s: main_new.cpp.s
 
-.PHONY : main.s
+.PHONY : main_new.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main.cpp.s
-.PHONY : main.cpp.s
+main_new.cpp.s:
+	$(MAKE) -f CMakeFiles/hello_crow.dir/build.make CMakeFiles/hello_crow.dir/main_new.cpp.s
+.PHONY : main_new.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... hello_crow"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... main_new.o"
+	@echo "... main_new.i"
+	@echo "... main_new.s"
 .PHONY : help
 
 
